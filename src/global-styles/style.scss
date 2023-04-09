@@ -1,0 +1,30 @@
+/// Main Styles File
+/// Here we import all the global Styles files we need for our project.
+
+@import "styles/normalize.scss";
+@import "styles/root.scss";
+@import "styles/fonts.scss";
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: var(--color-background);
+}
+
+h1{
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  margin: 0;
+}
+
+h2{
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+p{
+  font-size: 16px;
+  letter-spacing: -0.01em;
+  color: var(--color-stroke);
+  margin: 0;
+}

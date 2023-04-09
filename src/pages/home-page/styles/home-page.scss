@@ -1,0 +1,370 @@
+/// Homepage Styles File
+
+@use "../../../global-styles/style.scss";
+@use "../../../global-styles/styles/fonts.scss";
+@use "../../../global-styles/styles/normalize.scss";
+@use "../../../global-styles/styles/root.scss";
+
+$widthOfCard: 324px;
+$heightOfCard: 414px;
+$borderStyle: solid 1px var(--color-border);
+$borderRadius: 24px;
+$paddingOfCard: 32px;
+$marginTopOfPrice: 16px;
+$fontSizeDolar: 16px;
+$marginBottomOfDolar: 30px;
+$marginTopOfPlan: 24px;
+$widthOfPlan: 244px;
+$marginTopOfList: 16px;
+$iconOfList: url(../../../../assets/images/Frame\ 1000003303.png);
+$paddingLeftOfList: 20px;
+$btnWidtch: 260px;
+$btnHeight: 48px;
+$btnRadius: 16px;
+$btnBottom: 32px;
+$btnStyle: none;
+$widthOfCardTablet: 674px;
+$heightOfCarTablet: 278px;
+$positionOfPriceTablet: absolute;
+$topOfPriceTablet: 32px;
+$rightOfPriceTablet: 32px;
+$marginOfPriceTablet: 0;
+$rightOfBtnTablet: 32px;
+$leftOfPriceMobile: 0px;
+$widthOfCardMobile: 260px;
+$paddingOfCardMobile: 20px;
+$btnWidtchMobile: 200px;
+$widthOfPlanMobile: 200px;
+$leftOfBtnMobile: 20px;
+
+
+
+.home-page{
+    position: relative;
+
+    &_content-container{
+        width: 100%;
+        padding: 5%;
+      
+        &_title{
+            color: var(--color-primary);
+            width: 270px;
+            gap: 16px;
+            margin: 0 auto;
+            text-align: center;
+            line-height: 22px;
+        }
+
+        &_container{
+            width: 100%;
+            margin-top: 48px;
+            gap: 16px;
+
+            &_basic{
+                position: relative;
+                width: $widthOfCard;
+                height: $heightOfCard;
+                background-color: var(--color-background-of-element);
+                border: $borderStyle;
+                border-radius: $borderRadius;
+                padding: $paddingOfCard;
+
+                &_price{
+                    height: 42px;
+                    margin-top: $marginTopOfPrice;
+
+                    h5{
+                        font-size: $fontSizeDolar;
+                        margin-bottom: $marginBottomOfDolar;
+                    }
+                }
+
+                &_plan{
+                    margin-top: $marginTopOfPlan;
+                    width: $widthOfPlan;
+                }
+
+                &_list{
+                    margin-top: $marginTopOfList;
+                    list-style-image: $iconOfList;
+                    color: var(--color-primary);
+                    padding-left: $paddingLeftOfList;
+                }
+
+                &_btn{
+                    position: absolute;
+                    width: $btnWidtch;
+                    height: $btnHeight;
+                    bottom: $btnBottom;
+                    border-radius: $btnRadius;
+                    background-color: var(--color-primary);
+
+                    a{
+                        text-decoration: $btnStyle;
+                        color: var(--color-background-of-element);
+                    }
+                }
+
+                &_btn:hover{
+                    background-color: var(--color-hover);
+                }
+            }
+
+            &_professional{
+                position: relative;
+                width: $widthOfCard;
+                height: $heightOfCard;
+                background-color: var(--color-primary);
+                border: $borderStyle;
+                border-radius: $borderRadius;
+                padding: $paddingOfCard;
+                color: var(--color-background-of-element);
+
+                &_price{
+                    height: 42px;
+                    margin-top: $marginTopOfPrice;
+
+                    h5{
+                        font-size: $fontSizeDolar;
+                        margin-bottom: $marginBottomOfDolar;
+                    }
+                }
+
+                &_plan{
+                    margin-top: $marginTopOfPlan;
+                    width: $widthOfPlan;
+                }
+
+                &_list{
+                    margin-top: $marginTopOfList;
+                    list-style-image: $iconOfList;
+                    color: var(--color-background-of-element);
+                    padding-left: $paddingLeftOfList;
+                }
+
+                &_btn{
+                    position: absolute;
+                    width: $btnWidtch;
+                    height: $btnHeight;
+                    bottom: $btnBottom;
+                    border-radius: $btnRadius;
+                    background-color: var(--color-center-button);
+
+                    a{
+                        text-decoration: $btnStyle;
+                        color: var(--color-background-of-element);
+                    }
+                }
+
+                &_btn:hover{
+                    background-color: var(--color-hover);
+                }
+            }
+
+            &_enterprise{
+                position: relative;
+                width: $widthOfCard;
+                height: $heightOfCard;
+                background-color: var(--color-background-of-element);
+                border: $borderStyle;
+                border-radius: $borderRadius;
+                padding: $paddingOfCard;
+
+                &_price{
+                    height: 42px;
+                    margin-top: $marginTopOfPrice;
+
+                    h5{
+                        font-size: $fontSizeDolar;
+                        margin-bottom: $marginBottomOfDolar;
+                    }
+                }
+
+                &_plan{
+                    margin-top: $marginTopOfPlan;
+                    width: $widthOfPlan;
+                }
+
+                &_list{
+                    margin-top: $marginTopOfList;
+                    list-style-image: $iconOfList;
+                    color: var(--color-primary);
+                    padding-left: $paddingLeftOfList;
+                }
+
+                &_btn{
+                    position: absolute;
+                    width: $btnWidtch;
+                    height: $btnHeight;
+                    bottom: $btnBottom;
+                    border-radius: $btnRadius;
+                    background-color: var(--color-primary);
+
+                    a{
+                        text-decoration: $btnStyle;
+                        color: var(--color-background-of-element);
+                    }
+                }
+
+                &_btn:hover{
+                    background-color: var(--color-hover);
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        &_content-container{
+            padding: 9%;
+
+            &_container{
+                
+                &_basic{
+                    width: $widthOfCardTablet;
+                    height: $heightOfCarTablet;
+
+                    &_price{
+                        margin: $marginOfPriceTablet;
+                        position: $positionOfPriceTablet;
+                        top: $topOfPriceTablet;
+                        right: $rightOfPriceTablet;
+                    }
+
+                    &_btn{
+                        right: $rightOfBtnTablet;
+                    }
+                }
+
+                &_professional{
+                    width: $widthOfCardTablet;
+                    height: $heightOfCarTablet;
+
+                    &_price{
+                        margin: $marginOfPriceTablet;
+                        position: $positionOfPriceTablet;
+                        top: $topOfPriceTablet;
+                        right: $rightOfPriceTablet;
+                    }
+
+                    &_btn{
+                        right: $rightOfBtnTablet;
+                    }
+                }
+
+                &_enterprise{
+                    width: $widthOfCardTablet;
+                    height: $heightOfCarTablet;
+
+                    &_price{
+                        margin: $marginOfPriceTablet;
+                        position: $positionOfPriceTablet;
+                        top: $topOfPriceTablet;
+                        right: $rightOfPriceTablet;
+                    }
+
+                    &_btn{
+                        right: $rightOfBtnTablet;
+                    }
+                }
+            }
+        }
+    }  
+
+    @media screen and (max-width: 540px) {
+        &_content-container{
+
+            &_container{
+                
+                &_basic{
+                    width: $widthOfCard;
+                    height: $heightOfCard;
+
+                    &_price{
+                        position: relative;
+                        top: $marginTopOfPrice;
+                        left: $leftOfPriceMobile;
+                    }
+                }
+
+                &_professional{
+                    width: $widthOfCard;
+                    height: $heightOfCard;
+
+                    &_price{
+                        position: relative;
+                        top: $marginTopOfPrice;
+                        left: $leftOfPriceMobile;
+                    }
+                }
+
+                &_enterprise{
+                    width: $widthOfCard;
+                    height: $heightOfCard;
+
+                    &_price{
+                        position: relative;
+                        top: $marginTopOfPrice;
+                        left: $leftOfPriceMobile;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 280px) {
+        &_content-container{
+
+            &_title{
+                width: 230px;
+            }
+
+            &_container{
+                
+                &_basic{
+                    width: $widthOfCardMobile;
+                    height: $heightOfCard;
+                    padding: $paddingOfCardMobile;
+
+                    &_plan{
+                        width: $widthOfPlanMobile;
+                    }
+
+                    &_btn{
+                        width: $btnWidtchMobile;
+                        left: $leftOfBtnMobile;
+                    }
+                }
+
+                &_professional{
+                    width: $widthOfCardMobile;
+                    height: $heightOfCard;
+                    padding: $paddingOfCardMobile;
+
+                    &_plan{
+                        width: $widthOfPlanMobile;
+                    }
+
+                    &_btn{
+                        width: $btnWidtchMobile;
+                        left: $leftOfBtnMobile;
+                    }
+                }
+
+                &_enterprise{
+                    width: $widthOfCardMobile;
+                    height: $heightOfCard;
+                    padding: $paddingOfCardMobile;
+
+                    &_plan{
+                        width: $widthOfPlanMobile;
+                    }
+
+                    &_btn{
+                        width: $btnWidtchMobile;
+                        left: $leftOfBtnMobile;
+                    }
+                }
+            }
+        }
+    }
+}
