@@ -32,7 +32,7 @@ main {
  * `article` contexts in Chrome, Firefox, and Safari.
  */
 h1 {
-  font-size: 2em;
+  font-size: 48px;
   margin: 0;
 }
 
@@ -342,4 +342,16 @@ p {
   letter-spacing: -0.01em;
   color: var(--color-stroke);
   margin: 0;
+}
+
+button {
+  position: absolute;
+  width: 260px;
+  height: 48px;
+  border-radius: 16px;
+  background-color: var(--color-primary);
+}
+button a {
+  text-decoration: none;
+  color: var(--color-background-of-element);
 }/*# sourceMappingURL=style.css.map */

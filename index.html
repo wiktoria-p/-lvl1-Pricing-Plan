@@ -11,75 +11,76 @@
 </head>
 
 <body>
-  <div id="d-flex justify-content-center home-page">
-    <div class="d-flex flex-column home-page_content-container">
-      <div class="d-flex flex-column home-page_content-container_title">
-        <h1>Pricing</h1>
-        <p>Choose the right pricing for you and get started with you project.</p>
+      <div class="d-flex flex-column title">
+        <h1 class="title__title">Pricing</h1>
+        <p class="title__text">Choose the right pricing for you and get started with you project.</p>
       </div>
       
-      <div class="d-flex flex-row flex-wrap justify-content-center home-page_content-container_container">
-        <div class="home-page_content-container_container_basic">
+      <div class="d-flex flex-row flex-wrap justify-content-center content">
+        <div class="content__card ">
           <h2>Basic</h2>
-          <div class="d-flex flex-row align-items-end home-page_content-container_container_basic_price">
+          
+          <div class="d-flex flex-row align-items-end content__price">
             <h5>$</h5>
             <h1>399</h1>
             <p>/year</p>
           </div>
-          <p class="home-page_content-container_container_basic_plan">
+          
+          <p class="content__plan">
             For organizing every corner of your work & life.
           </p>
-          <ul class="home-page_content-container_container_basic_list">
+          
+          <ul class="content__list">
             <li>Collaborative workspace</li>
             <li>7 day page history</li>
           </ul>
-          <button class="home-page_content-container_container_basic_btn">
+         
+          <button class="content__btn">
             <a href="#">Get started</a>
           </button>
         </div>
         
-        <div class="home-page_content-container_container_professional">
+        <div class="content__card content_card-professional">
           <h2>Professional</h2>
-          <div class="d-flex flex-row align-items-end home-page_content-container_container_professional_price">
+          <div class="d-flex flex-row align-items-end content__price content_price-professional">
             <h5>$</h5>
             <h1>499</h1>
             <p>/year</p>
           </div>
-          <p class="home-page_content-container_container_professional_plan">
+          <p class="content__plan content_plan-professional">
             A place for small groups to plan & get organized.
           </p>
-          <ul class="home-page_content-container_container_professional_list">
+          <ul class="content__list content_list-professional">
             <li>All features in Basic</li>
             <li>Unlimited blocks for teams</li>
             <li>30 day page history</li>
           </ul>
-          <button class="home-page_content-container_container_professional_btn">
+          <button class="content__btn content_btn-professional">
             <a href="#">Get started</a>
           </button>
         </div>
         
-        <div class="home-page_content-container_container_enterprise">
+        <div class="content__card">
            <h2>Enterprise</h2>
-           <div class="d-flex flex-row align-items-end home-page_content-container_container_enterprise_price">
+           <div class="d-flex flex-row align-items-end content__price">
              <h5>$</h5>
              <h1>599</h1>
              <p>/year</p>
            </div>
-           <p class="home-page_content-container_container_enterprise_plan">
+           <p class="content__plan">
            For companies using our software to connect several teams & tools.
            </p>
-           <ul class="home-page_content-container_container_enterprise_list">
+           <ul class="content__list">
              <li>SAML SSO</li>
              <li>Private teamspaces</li>
              <li>Advanced page analytics</li>
              <li>90 day page history</li>
            </ul>
-           <button class="home-page_content-container_container_enterprise_btn">
+           <button class="content__btn">
              <a href="#">Get started</a>
            </button>
         </div>
       </div>
-  </div>
 
   <script type="module" src="/src/global-scripts/main.js"></script>
   <script type="module" src="/src/pages/home-page/scripts/home-page.js"></script>

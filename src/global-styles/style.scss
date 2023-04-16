@@ -28,3 +28,16 @@ p{
   color: var(--color-stroke);
   margin: 0;
 }
+
+button{
+  position: absolute;
+  width: 260px;
+  height: 48px;
+  border-radius: 16px;
+  background-color: var(--color-primary);
+
+  a{
+      text-decoration: none;
+      color: var(--color-background-of-element);
+  }
+}
